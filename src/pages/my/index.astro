@@ -1,0 +1,14 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import MyBox from "../../components/MyBox";
+import Card from "../../components/Card.astro";
+---
+
+<Layout title="Welcome to Astro.">
+  <main>
+    <Card title="My Card" body="My Card Body" href="https://astro.build" />
+    <MyBox title="My Box" client:load>
+      <p>My Box123</p>
+    </MyBox>
+  </main>
+</Layout>
